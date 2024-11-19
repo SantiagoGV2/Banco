@@ -1,0 +1,61 @@
+<main>
+    <div class="container mt-5">
+        <h3 class="text-center text-primary">SOLICITUD DE TARJETA DE CRÉDITO</h3>
+        <div class="mt-4 p-4" style="background-color: #76c8ff; border-radius: 8px;">
+          <h5 class="text-center text-white">DATOS DEL SOLICITANTE</h5>
+          <form>
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Primer Apellido" required />
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Segundo Apellido" required />
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Primer Nombre" required />
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Segundo Nombre" />
+              </div>
+            </div>
+      
+            <div class="row mb-3">
+              <div class="col-md-3">
+                <label class="form-label text-white">Fecha de Nacimiento</label>
+                <input type="date" class="form-control" required />
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Teléfono" required />
+              </div>
+              <div class="col-md-3">
+                <input type="text" class="form-control" placeholder="Cédula" required />
+              </div>
+              <div class="col-md-3">
+                <label class="form-label text-white">Fecha de Expedición</label>
+                <input type="date" class="form-control" required />
+              </div>
+            </div>
+      
+            <!-- Nuevo Campo: Correo Electrónico -->
+            <div class="row mb-3">
+              <div class="col-md-12">
+                <input type="email" class="form-control" placeholder="Correo Electrónico" required />
+              </div>
+            </div>
+      
+            <div class="text-center">
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </div>
+          </form>
+        </div>
+      
+        <div class="mt-4 p-4 text-center" style="background-color: #f0f8ff; border-radius: 8px;">
+          <h5 class="text-primary">ESTADO DE LA SOLICITUD</h5>
+          <div class="d-flex justify-content-center gap-3">
+            <i class="fas fa-times-circle fa-2x text-danger"></i>
+            <i class="fas fa-check-circle fa-2x text-success"></i>
+            <i class="fas fa-exclamation-circle fa-2x text-warning"></i>
+          </div>
+        </div>
+      </div>
+</main>
