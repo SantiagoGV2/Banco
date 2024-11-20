@@ -6,6 +6,7 @@ import { EditComponent } from './Persona/edit/edit.component';
 import { HomeComponent } from './home/home.component';
 import { RegistrarComponent } from './Persona/registrar/registrar.component';
 import { SolicitudComponent } from './Persona/solicitud/solicitud.component';
+import { CreacionComponent } from './Empleado/creacion/creacion.component';
 
 const routes: Routes = [
   {path: 'listar', component: ListarComponent},
@@ -13,7 +14,8 @@ const routes: Routes = [
   {path: 'edit', component: EditComponent},
   {path: '', component: HomeComponent},
   {path: 'registrar', component: RegistrarComponent},
-  {path: 'solicitud', component: SolicitudComponent}
+  {path: 'solicitud', component: SolicitudComponent},
+  {path: 'creacion', component: CreacionComponent}
 ];
 
 @NgModule({

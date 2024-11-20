@@ -1,1 +1,66 @@
-<p>creacion works!</p>
+<div class="container mt-5">
+    <h3 class="text-center text-primary">CREACIÓN DEL PRODUCTO</h3>
+    <div class="mt-4 p-4" style="background-color: #76c8ff; border-radius: 8px;">
+      <form>
+        
+        <div class="row mb-3">
+          <div class="col-md-3">
+            <input type="text" class="form-control" placeholder="Primer Apellido" required />
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control" placeholder="Segundo Apellido" required />
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control" placeholder="Primer Nombre" required />
+          </div>
+          <div class="col-md-3">
+            <input type="text" class="form-control" placeholder="Segundo Nombre" />
+          </div>
+        </div>
+  
+       
+        <div class="row mb-3">
+          <div class="col-md-6">
+            <input type="email" class="form-control" placeholder="Correo" required />
+          </div>
+          <div class="col-md-6">
+            <input type="text" class="form-control" placeholder="Teléfono" required />
+          </div>
+        </div>
+  
+        
+        <hr class="my-4" style="border-top: 2px solid #343aeb;" />
+  
+  
+        <div class="row mb-3">
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Cupo" required />
+          </div>
+          <div class="col-md-4">
+          
+            <select class="form-select" required>
+              <option selected disabled>Seleccione tipo de tarjeta</option>
+              <option value="premium">Tarjeta Premium</option>
+              <option value="gold">Tarjeta Gold</option>
+              <option value="student">Tarjeta Student</option>
+            </select>
+          </div>
+          <div class="col-md-4">
+            <input type="text" class="form-control" placeholder="Monto" required />
+          </div>
+        </div>
+  
+    
+        <div class="row mb-3">
+          <div class="col-md-12">
+            <label class="form-label text-white">Fecha de Solicitud</label>
+            <input type="date" class="form-control" required />
+          </div>
+        </div>
+  
+        <div class="text-center">
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </div>
+      </form>
+    </div>
+  </div>
