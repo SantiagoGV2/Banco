@@ -1,111 +1,115 @@
 <body>
-    <div class="container-fluid">
-      <div class="row">
-        <!-- Sidebar -->
-        <nav class="col-md-3 col-lg-2 d-md-block bg-primary-subtle sidebar pt-3">
-          <div class="position-sticky">
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <nav class="col-md-3 col-lg-2 d-md-block bg-primary-subtle sidebar pt-3">
+        <div class="position-sticky">
             <ul class="nav flex-column">
-              <li class="nav-item">
-                <a class="nav-link active" routerLink="/homeEmpleado">
-                  <i class="bi bi-house-door-fill"></i> Inicio
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" routerLink="/creacion">
-                  <i class="bi bi-wallet2"></i> Creación de Producto
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-cash-coin"></i> Lista de Productos
-                </a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  <i class="bi bi-credit-card"></i> Tablero de Control
-                </a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link active" routerLink="/homeEmpleado">
+                        <i class="bi bi-house-door-fill"></i> Inicio
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/creacion">
+                        <i class="bi bi-wallet2"></i> Creación de producto
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/solicitudes">
+                        <i class="bi bi-check-circle"></i> Lista de Solicitudes
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/entrega">
+                        <i class="bi bi-box-seam"></i> Solicitud de entrega
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/productos">
+                        <i class="bi bi-credit-card-2-front"></i> Productos
+                    </a>
+                </li>
             </ul>
-          </div>
-        </nav>
-  
-        <!-- Main Content -->
-        <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-5">
-          <!-- Header -->
-          <h1 class="text-center text-primary">Lista de Productos del Banco</h1>
-          <p class="text-center text-muted">
-            Explore la variedad de productos financieros que ofrecemos para satisfacer sus necesidades.
-          </p>
-  
-          <!-- Productos (Grid de Tarjetas) -->
-          <div class="row mt-4">
-            <!-- Tarjeta: Cuentas Bancarias -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Cuentas Bancarias</h5>
-                  <p class="card-text">
-                    Ofrecemos cuentas de ahorro, corrientes y a plazo fijo, adaptadas a sus objetivos financieros.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Tarjeta: Tarjetas de Crédito -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Tarjetas de Crédito</h5>
-                  <p class="card-text">
-                    Con nuestras tarjetas, disfrute de beneficios exclusivos, recompensas y líneas de crédito flexibles.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Tarjeta: Préstamos -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Préstamos</h5>
-                  <p class="card-text">
-                    Obtenga financiamiento para sus proyectos personales, vivienda, automóviles o negocios.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Tarjeta: Seguros -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Seguros</h5>
-                  <p class="card-text">
-                    Proteja lo que más importa con seguros de vida, salud, vivienda y más.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
-              </div>
-            </div>
-  
-            <!-- Tarjeta: Servicios Digitales -->
-            <div class="col-md-4 mb-4">
-              <div class="card h-100 shadow-sm">
-                <div class="card-body">
-                  <h5 class="card-title text-primary">Servicios Digitales</h5>
-                  <p class="card-text">
-                    Simplifique su vida con nuestra banca en línea, aplicaciones móviles y transferencias electrónicas.
-                  </p>
-                  <a href="#" class="btn btn-primary">Ver más</a>
-                </div>
+        </div>
+    </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-9 ms-sm-auto col-lg-10 px-md-4 mt-5">
+        <!-- Header -->
+        <h1 class="text-center text-primary">Lista de Productos del Banco</h1>
+        <p class="text-center text-muted">
+          Explore la variedad de productos financieros que ofrecemos para satisfacer sus necesidades.
+        </p>
+
+        <!-- Productos (Grid de Tarjetas) -->
+        <div class="row mt-4">
+          <!-- Tarjeta: Cuentas Bancarias -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Cuentas Bancarias</h5>
+                <p class="card-text">
+                  Ofrecemos cuentas de ahorro, corrientes y a plazo fijo, adaptadas a sus objetivos financieros.
+                </p>
+                <a routerLink="/cuentas" class="btn btn-primary">Ver más</a>
               </div>
             </div>
           </div>
-        </main>
-      </div>
+
+          <!-- Tarjeta: Tarjetas de Crédito -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Tarjetas de Crédito</h5>
+                <p class="card-text">
+                  Con nuestras tarjetas, disfrute de beneficios exclusivos, recompensas y líneas de crédito flexibles.
+                </p>
+                <a routerLink="/credito" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta: Préstamos -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Tarjetas de Débito</h5>
+                <p class="card-text">
+                  Obtenga financiamiento para sus proyectos personales, vivienda, automóviles o negocios.
+                </p>
+                <a routerLink="/debito" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta: Seguros -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Seguros</h5>
+                <p class="card-text">
+                  Proteja lo que más importa con seguros de vida, salud, vivienda y más.
+                </p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tarjeta: Servicios Digitales -->
+          <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+              <div class="card-body">
+                <h5 class="card-title text-primary">Servicios Digitales</h5>
+                <p class="card-text">
+                  Simplifique su vida con nuestra banca en línea, aplicaciones móviles y transferencias electrónicas.
+                </p>
+                <a href="#" class="btn btn-primary">Ver más</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
     </div>
-  </body>
-  
+  </div>
+</body>

@@ -1,0 +1,19 @@
+.hero-section {
+    background-color: #004481;
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .hero-section h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .hero-section p {
+    font-size: 1.2rem;
+  }
+
+  .table-section {
+    padding: 2rem 1rem;
+  }

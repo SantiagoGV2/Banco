@@ -12,6 +12,11 @@ import { OlvidarEComponent } from './Empleado/olvidar-e/olvidar-e.component';
 import { HomeEmpleadoComponent } from './home-empleado/home-empleado.component';
 import { EntregaComponent } from './Empleado/entrega/entrega.component';
 import { ProductosComponent } from './Empleado/productos/productos.component';
+import { SolicitudesComponent } from './Empleado/solicitudes/solicitudes.component';
+import { ProductoComponent } from './Persona/producto/producto.component';
+import { CreditoComponent } from './Empleado/credito/credito.component';
+import { CuentasComponent } from './Empleado/cuentas/cuentas.component';
+import { DebitoComponent } from './Empleado/debito/debito.component';
 
 const routes: Routes = [
   {path: 'add', component: AddComponent},
@@ -25,7 +30,12 @@ const routes: Routes = [
   {path: 'olvidarE', component: OlvidarEComponent},
   {path: 'homeEmpleado', component: HomeEmpleadoComponent},
   {path: 'entrega', component: EntregaComponent},
-  {path: 'productos', component: ProductosComponent}
+  {path: 'productos', component: ProductosComponent},
+  {path: 'solicitudes', component: SolicitudesComponent},
+  {path: 'producto', component: ProductoComponent},
+  {path: 'credito', component: CreditoComponent},
+  {path: 'cuentas', component: CuentasComponent},
+  {path: 'debito', component: DebitoComponent}
 ];
 
 @NgModule({

@@ -14,6 +14,11 @@ import { OlvidarEComponent } from './Empleado/olvidar-e/olvidar-e.component';
 import { HomeEmpleadoComponent } from './home-empleado/home-empleado.component';
 import { EntregaComponent } from './Empleado/entrega/entrega.component';
 import { ProductosComponent } from './Empleado/productos/productos.component';
+import { SolicitudesComponent } from './Empleado/solicitudes/solicitudes.component';
+import { CreditoComponent } from './Empleado/credito/credito.component';
+import { ProductoComponent } from './Persona/producto/producto.component';
+import { CuentasComponent } from './Empleado/cuentas/cuentas.component';
+import { DebitoComponent } from './Empleado/debito/debito.component';
 
 @NgModule({
   declarations: [
@@ -30,6 +35,11 @@ import { ProductosComponent } from './Empleado/productos/productos.component';
     HomeEmpleadoComponent,
     EntregaComponent,
     ProductosComponent,
+    SolicitudesComponent,
+    CreditoComponent,
+    ProductoComponent,
+    CuentasComponent,
+    DebitoComponent,
   ],
   imports: [
     BrowserModule,
