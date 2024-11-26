@@ -1,66 +1,116 @@
-<div class="container mt-5">
-    <h3 class="text-center text-primary">CREACIÓN DEL PRODUCTO</h3>
-    <div class="mt-4 p-4" style="background-color: #76c8ff; border-radius: 8px;">
-      <form>
-        
-        <div class="row mb-3">
-          <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Primer Apellido" required />
-          </div>
-          <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Segundo Apellido" required />
-          </div>
-          <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Primer Nombre" required />
-          </div>
-          <div class="col-md-3">
-            <input type="text" class="form-control" placeholder="Segundo Nombre" />
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar Menu -->
+      <nav class="col-md-3 col-lg-2 d-md-block bg-primary-subtle sidebar pt-3">
+        <div class="position-sticky">
+          <ul class="nav flex-column">
+            <li class="nav-item">
+                <a class="nav-link active" routerLink="/homeEmpleado">
+                    <i class="bi bi-house-door-fill"></i> Inicio
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/creacion">
+                    <i class="bi bi-wallet2"></i> Creacion de producto
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-cash-coin"></i> Lista de Solicitudes
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-credit-card"></i> Tablero de Control
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" routerLink="/entrega">
+                    <i class="bi bi-graph-up"></i> Solicitud de entrega
+                </a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">
+                    <i class="bi bi-gear"></i> Productos
+                </a>
+            </li>
+        </ul>
+        </div>
+      </nav>
+
+      <!-- Main Content -->
+      <main class="col-md-9 col-lg-10">
+        <div class="container mt-5">
+          <!-- Header -->
+          <h3 class="text-center text-primary">CREACIÓN DEL PRODUCTO</h3>
+
+          <!-- Form Section -->
+          <div class="mt-4 p-4">
+            <form class="p-4" style="background-color: #f8f9fa; border-radius: 8px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);">
+              <!-- Row: Apellidos y Nombres -->
+              <div class="row mb-3">
+                <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Primer Apellido" required />
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Segundo Apellido" required />
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Primer Nombre" required />
+                </div>
+                <div class="col-md-3">
+                  <input type="text" class="form-control" placeholder="Segundo Nombre" />
+                </div>
+              </div>
+
+              <!-- Row: Correo y Teléfono -->
+              <div class="row mb-3">
+                <div class="col-md-6">
+                  <input type="email" class="form-control" placeholder="Correo" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="text" class="form-control" placeholder="Teléfono" required />
+                </div>
+              </div>
+
+              <!-- Divider -->
+              <hr class="my-4" style="border-top: 2px solid #1e3ef3;" />
+
+              <!-- Row: Cupo, Tipo de Tarjeta, Monto -->
+              <div class="row mb-3">
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Cupo" required />
+                </div>
+                <div class="col-md-4">
+                  <select class="form-select" required>
+                    <option selected disabled>Seleccione tipo de tarjeta</option>
+                    <option value="premium">Tarjeta Premium</option>
+                    <option value="gold">Tarjeta Gold</option>
+                    <option value="student">Tarjeta Student</option>
+                  </select>
+                </div>
+                <div class="col-md-4">
+                  <input type="text" class="form-control" placeholder="Monto" required />
+                </div>
+              </div>
+
+              <!-- Row: Fecha de Solicitud -->
+              <div class="row mb-3">
+                <div class="col-md-12">
+                  <label class="form-label text-white">Fecha de Solicitud</label>
+                  <input type="date" class="form-control" required />
+                </div>
+              </div>
+
+              <!-- Submit Button -->
+              <div class="text-center">
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
           </div>
         </div>
-  
-       
-        <div class="row mb-3">
-          <div class="col-md-6">
-            <input type="email" class="form-control" placeholder="Correo" required />
-          </div>
-          <div class="col-md-6">
-            <input type="text" class="form-control" placeholder="Teléfono" required />
-          </div>
-        </div>
-  
-        
-        <hr class="my-4" style="border-top: 2px solid #343aeb;" />
-  
-  
-        <div class="row mb-3">
-          <div class="col-md-4">
-            <input type="text" class="form-control" placeholder="Cupo" required />
-          </div>
-          <div class="col-md-4">
-          
-            <select class="form-select" required>
-              <option selected disabled>Seleccione tipo de tarjeta</option>
-              <option value="premium">Tarjeta Premium</option>
-              <option value="gold">Tarjeta Gold</option>
-              <option value="student">Tarjeta Student</option>
-            </select>
-          </div>
-          <div class="col-md-4">
-            <input type="text" class="form-control" placeholder="Monto" required />
-          </div>
-        </div>
-  
-    
-        <div class="row mb-3">
-          <div class="col-md-12">
-            <label class="form-label text-white">Fecha de Solicitud</label>
-            <input type="date" class="form-control" required />
-          </div>
-        </div>
-  
-        <div class="text-center">
-          <button type="submit" class="btn btn-primary">Enviar</button>
-        </div>
-      </form>
+      </main>
     </div>
   </div>
+</body>
